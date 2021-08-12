@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        
+        body {
+            background-color:white;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        
+        button {
+            
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    
+  
+    
+    <form id="form">
+ 
+        
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <div>
+            <input type="text"
+                   id="name"
+                   placeholder="FirstName" />
+            </div><div>
+                   <input type="text"
+                   id="name"
+                   placeholder="LastName" />
+                   </div>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                <h3>Your Experience</h3>
+            </label>
+ 
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <h5>Overall how would you rate your experience with us.</h5>
+        </div>
+        <li>How satisfied were you with our service?
+            <ul>
+              <li><label for="vsat">Very satisfied</label> <input type="radio" name="satisfaction" id="vsat" value="vsat"></li>
+              <li><label for="sat">Satisfied</label> <input type="radio" name="satisfaction" id="sat" value="sat"></li>
+              <li><label for="dcare">Didn't care</label> <input type="radio" name="satisfaction" id="dcare" value="dcare"></li>
+              <li><label for="disat">Dissatisfied</label> <input type="radio" name="satisfaction" id="disat" value="disat"></li>
+              <li><label for="vdisat">Very dissatisfied</label> <input type="radio" name="satisfaction" id="vdisat" value="vdisat"></li>
+            </ul>
+          </li>
+          <li>How Likely are you to?
+            <ul>
+              <li><label for="vsat">Very satisfied</label> <input type="radio" name="satisfaction" id="vsat" value="vsat"></li>
+              <li><label for="sat">Satisfied</label> <input type="radio" name="satisfaction" id="sat" value="sat"></li>
+              <li><label for="dcare">Didn't care</label> <input type="radio" name="satisfaction" id="dcare" value="dcare"></li>
+              <li><label for="disat">Dissatisfied</label> <input type="radio" name="satisfaction" id="disat" value="disat"></li>
+              <li><label for="vdisat">Very dissatisfied</label> <input type="radio" name="satisfaction" id="vdisat" value="vdisat"></li>
+            </ul>
+          </li>
+        <div class="form-control">
+            <label for="comment">
+                Additional comments or suggestions
+            </label>
+ 
+            
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>
